@@ -9,8 +9,7 @@ The boilerplate includes gulp, sass, sourcemaps, autoprefixer, breakpoint and br
 
 ## Quickstart
 ```bash
-$ git clone https://github.com/olefredrik/sass-boilerplate.git
-$ cd sass-boilerplate
+$ git clone 
 $ npm install
 $ gulp
 ```
