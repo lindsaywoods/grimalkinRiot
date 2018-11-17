@@ -1,28 +1,31 @@
-#example {
-  @include breakpoint($small) {
-    width: 100%;
-    background-color: $grey-color;
-    display: flex;
-    height: 100vh;
-    align-items:center;
-
-    h1 {
-      color: $white-color;
-      width: 100%;
-      text-align: center;
-      font-size: 3rem;
+    .tab-content {
+        display: none;
     }
-  }
 
-  @include breakpoint($medium) {
-    background-color: $blue-color;
-  }
+    .tab-headers {
+        display: flex;
+    }
 
-  @include breakpoint($large) {
-    background-color: $dark-grey-color;
-  }
+    .tab-header {
+        background-color: #eff0f2;
+        color: #888;
+        padding: 5px 10px;
+        border-bottom: 2px solid #87d3b7;
+    }
 
-  @include breakpoint($x-large) {
-    background-color: $magenta-color
-  }
-}
+    .tab-header:hover {
+        cursor: pointer;
+    }
+
+    .tab-header.active {
+        background-color: #87d3b7;
+        color: #FFF;
+    }
+
+    .tab-content {
+        padding: 5px;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
