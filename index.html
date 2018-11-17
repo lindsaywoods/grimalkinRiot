@@ -2,56 +2,18 @@
 <html lang="en">
 
 <head>
-  <title>Tabs</title>
+  <title>Madame Grimalkin</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="assets/css/app.css" rel="stylesheet" />
 
 </head>
-
 <body>
-  <div class="main-container">
-    <tabs></tabs>
-  </div>
+  <landing></landing>
+  <script type="riot/tag" src="landing.tag"></script>
+  <script src="https://cdn.jsdelivr.net/npm/riot@3.13/riot+compiler.min.js"></script>
+  <script>riot.mount('landing')</script>
 </body>
 
-  <script type="text/javascript">
-    var tabs = [{
-      id: 1,
-      title: "tab 1",
-      content: "some content 1"
-    },
-    {
-      id: 2,
-      title: "tab 2",
-      content: "some content 2"
-    },
-    {
-      id: 3,
-      title: "tab 3",
-      content: "some content 3"
-    }
-    ];
-  </script>
-
-  <!-- <script src="path/to/javascript/with-tags.tag" type="riot/tag"></script> -->
-  <script src = "components/tabs.tag" type="riot/tag"></script>
-  <script src="https://cdn.jsdelivr.net/npm/riot@3.13/riot+compiler.min.js"></script>
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.3.0/riot+compiler.min.js"></script> -->
-
-  <script src="components/tab-header.tag" type="riot/tag"></script>
-  <script src="components/tab-headers.tag" type="riot/tag"></script>
-  <script src="components/tabs.tag" type="riot/tag"></script>
-  <script src="components/tab-content.tag" type="riot/tag"></script>
-  <script src="components/tab-contents.tag" type="riot/tag"></script>
-  
-
-  <script>
-    riot.mount('*', {
-      tabs: tabs,
-      defaultTabIndex: 1
-    })
-  </script>
 
 </html>
