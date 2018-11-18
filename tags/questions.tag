@@ -3,7 +3,11 @@
     <h3> { questionPageText }</h3>
     <textarea show={ askHere } name="questionText" id="" cols="30" rows="10"></textarea>
   </ask-question-here>
-  <answer> { answer } </answer>
+  <answer>
+    <p id="predictions">
+      { answer }
+    </p> 
+  </answer>
   <button onclick={ nextPage } > { buttonText } </button>
 
   <script>
@@ -46,6 +50,8 @@
       this.answer = ``
       this.askHere = true
       this.buttonText = `ask`
+      const test = document.getElementById('predictions')
+      test.className = ""
     }
     
     selectAnswer() {
@@ -97,17 +103,10 @@
       
       // get prediction style class from array 'predictionStyles'
       const predictionStyle = predictionStyles[randomIndex];
-      this.answer = getPrediction;
+      const predictionText = document.getElementById('predictions');
       
-
-    
-    
-    
-    
-    
-    
-    
-    
+      predictionText.classList.add(predictionStyle)
+      this.answer = getPrediction;
     
     
     
