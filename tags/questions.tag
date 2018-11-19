@@ -1,14 +1,14 @@
 <questions>
   <ask-question-here>
     <h3> { questionPageText }</h3>
-    <textarea show={ askHere } name="questionText" id="" cols="30" rows="10"></textarea>
+    <textarea show={ askHere } name="questionText" id="textArea" cols="30" rows="10"></textarea>
   </ask-question-here>
   <answer>
     <p id="predictions">
       { answer }
     </p> 
   </answer>
-  <button onclick={ nextPage } > { buttonText } </button>
+  <button onclick={ nextPage } input type="submit" > { buttonText } </button>
 
   <script>
 
@@ -18,6 +18,13 @@
     this.buttonText = `ask`
     this.askHere = true
     this.answer = ""
+    // this.document.myform.mytextfield.focus();
+    // console.log('this.docutment', this.document);
+      console.log('here', window.document.getElementById('textArea') );
+      
+        // window.document.getElementById('textArea').focus();
+    
+
 
     nextPage() {
       const expr = this.buttonText;
@@ -29,7 +36,7 @@
         
         case 'ask':
         this.askQuestion()
-          this.buttonText = `ask another`
+        this.buttonText = `ask another`
       }
     }
     
@@ -55,7 +62,6 @@
     }
     
     selectAnswer() {
-      // this.answer =  `ANSWER GOES HERE`
       function getRandomIndex(array) {
         const randomElement = Math.floor(Math.random() * array.length);
         return randomElement;

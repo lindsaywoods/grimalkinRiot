@@ -1,0 +1,135 @@
+questions {
+
+  .prediction-1, .prediction-2 {
+    font-family: 'Barrio', cursive;
+    font-size: 30px;    
+      &:before {
+          font-family: $copyFont;
+          content:"soothsayer clementine says : ";
+          font-size: 14px;
+      } 
+      &:after {
+          content: url("../scss/components/kittens/clementine.svg");
+      }
+    }
+    
+
+  // PREDICTION 3 & PREDICTION 4 - CLEMENTINE
+  .prediction-3, .prediction-4 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 16px;
+  }
+  .prediction-3::after, .prediction-4::after {
+    content: url("../scss/components/kittens/clementine2.svg");
+  }
+  .prediction-3::before, .prediction-4::before {
+    content: "soothsayer clementine says: ";
+    font-family: $copyFont;    
+  }
+
+  // PREDICTION 5 & PREDICTION 6 - HORTENSE
+  .prediction-5, .prediction-6{
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 40px;
+  }
+  .prediction-5::after, .prediction-6::after {
+    content: url("../scss/components/kittens/hortense.svg");
+  }
+  .prediction-5::before, .prediction-6::before {
+    content: "soothsayer hortense says: ";
+    font-family: $copyFont;    
+    font-size: 14px;
+  }
+  .prediction-6 {
+    font-size: 25px;
+  }
+
+  // PREDICTION 7 & PREDICTION 8
+  .prediction-7, .prediction-8 {
+    font-family: 'Seaweed Script', cursive;
+    font-size: 28px;
+    padding-bottom: 30px;
+  }
+  .prediction-7::before, .prediction-8::before {
+    content: "soothsayer olivia says:";
+    font-family: $copyFont;
+    font-size: 16px;
+  }
+  .prediction-7::after, .prediction-8::after {
+    content: url("../scss/components/kittens/olivia.svg");
+  }
+
+  // PREDICTION 9 & PREDICTION 10 - HORTENSE
+  .prediction-9, .prediction-10 {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 45px;
+    &::before {
+      content: "soothsayer hortense says : ";
+      font-family: $copyFont;
+      font-size: 14px;
+    }
+    &::after {
+      content: url("../scss/components/kittens/hortense2.svg")
+    }
+  }
+  .prediction-9 {
+    font-size: 30px;
+  }
+
+  //PREDICTION 11 - OLIVIA
+  .prediction-11 {
+    font-family: 'Seaweed Script', cursive;
+    font-size: 30px;
+    line-height: 40px;
+    &::before {
+      font-family: $copyFont;
+      content: "soothsayer olivia says : ";
+      font-size: 14px;
+    }    
+    &::after {
+      content: url("../scss/components/kittens/olivia2.svg");
+    }
+  }
+
+  //  PREDICTION 12 - SOPHRONIA
+  .prediction-12 {
+    font-family: 'Miniver', cursive;
+    font-size: 24px;
+    &::before{
+      content: "soothsayer sophronia says : ";
+      font-family: $copyFont;
+      font-size: 14px;
+    }
+    &::after {
+      content: url("../scss/components/kittens/sophronia.svg");
+    }    
+  }
+
+  //  PREDICTION 13 - MABEL
+  .prediction-13 {
+    font-family: 'Sail', cursive;
+    font-size: 30px;
+    &::before {
+      content: "soothsayer mabel says : ";
+      font-size: 14px;
+      font-family: $copyFont;
+    }
+    &::after {
+      content: url("../scss/components/kittens/mabel.svg");
+    }
+  }
+
+  // PREDICTION 14 - SOPHRONIA
+  .prediction-14 {
+    font-family: 'Miniver', cursive;
+    font-size: 30px;
+    &::before {
+      content: "soothsayer sophronia says : ";
+      font-family: $copyFont;
+      font-size: 14px;
+    }
+    &::after {
+      content: url("../scss/components/kittens/sophronia2.svg");
+    }
+  }
+}
