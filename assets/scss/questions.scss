@@ -1,9 +1,32 @@
 questions {
-  ask-question-here {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  color: $mainWhite;
+  h3 {
+    font-family: $displayFont;
   }
-  
+  button {
+    width: 100px;
+    margin: 0 auto;
+    font-family: $displayFont;
+    text-transform: uppercase;
+    background: lighten($backgroundColour, 10);
+    border: none;
+    border-radius: 5px;
+
+  }
+  input {
+    border-radius: 5px;
+    background: lighten($backgroundColour, 10);
+    color: $mainWhite;
+    border: none;
+    padding: 3px 5px;
+    width: 60%;
+    margin: 1%;
+    font-family: $copyFont;
+    font-size: 30px;
+    text-align: center;
+  }
   text-align: center;
 
   .prediction-1, .prediction-2 {

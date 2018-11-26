@@ -1,11 +1,48 @@
 landing {
 	font-family: $copyFont;
-			margin: 0 auto;
-			display: block;
-			text-align: center;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 	button {
-			display: block;
-			margin: 0 auto;
+		display: block;
+		margin: 4% auto;
+		padding: 2%;
+		font-family: $displayFont;
+		text-transform: uppercase;
+		font-size: 20px;
+		letter-spacing: 1px;
+		background: lighten($backgroundColour, 10);
+		color: $mainWhite;
+		border: none;
+		transition: all 1.25s ease;
+		border-radius: 5px;
+		&:hover {
+			background: darken($backgroundColour, 2);
+			border: 1px solid gold;
+		}
 	}
-
+	header {
+		font-size: xx-large;
+		line-height: 2;
+		font-family: $displayFont;
+		margin-bottom: 3%;
+		line-height: 1;
+	}
+	main-message {
+		font-size: x-large;
+	}
+	card-border {
+		// border: 1px solid $mainWhite;
+		margin: 0 5%;
+		// max-width: 500px;
+	}
+	family-portrait-svg {
+		position: absolute;
+		bottom: 3px;
+	}
+	lightbulb-string-svg {
+		margin-bottom: 6%;
+	}
 }

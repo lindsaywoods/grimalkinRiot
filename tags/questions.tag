@@ -1,14 +1,14 @@
 <questions>
   <ask-question-here>
     <h3> { questionPageText }</h3>
-    <textarea show={ askHere } name="questionText" id="textArea" cols="30" rows="10"></textarea>
+    <input show={ askHere } type="text" name="questionText" id="textArea" ></input>
   </ask-question-here>
   <answer>
     <p id="predictions" class="predictions">
       { answer }
     </p> 
   </answer>
-  <button onclick={ nextPage } input type="submit" > { buttonText } </button>
+  <button onclick={ nextPage } input="submit" type="submit" > { buttonText } </button>
 
   <script>
 
