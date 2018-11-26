@@ -4,7 +4,7 @@
     <textarea show={ askHere } name="questionText" id="textArea" cols="30" rows="10"></textarea>
   </ask-question-here>
   <answer>
-    <p id="predictions">
+    <p id="predictions" class="predictions">
       { answer }
     </p> 
   </answer>
@@ -110,6 +110,7 @@
       // get prediction style class from array 'predictionStyles'
       const predictionStyle = predictionStyles[randomIndex];
       const predictionText = document.getElementById('predictions');
+
       
       predictionText.classList.add(predictionStyle)
       this.answer = getPrediction;

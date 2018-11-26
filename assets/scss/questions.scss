@@ -1,4 +1,10 @@
 questions {
+  ask-question-here {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  text-align: center;
 
   .prediction-1, .prediction-2 {
     font-family: 'Barrio', cursive;
