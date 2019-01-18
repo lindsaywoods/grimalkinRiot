@@ -30,7 +30,7 @@
     switchToQuestionPage() {
       this.landingPage = false;
       riot.mount('questions')
-      document.getElementById("questions").style.border = "2px solid mediumvioletred";
+      document.getElementById("questions").style.border = "3px solid #d8ddef";
     }
   </script>
 </landing>

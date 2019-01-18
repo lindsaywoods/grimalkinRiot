@@ -1,0 +1,10 @@
+TO DO
+
+- mediaQ fontsize on landing page
+- 'click here to divine' hover animation
+- 'ask your question here' styling and spacing
+- before element placement
+- answer spacing and layout
+- link to home?
+- accessiblity
+- 'your question' label

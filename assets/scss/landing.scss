@@ -21,7 +21,7 @@ landing {
 		border-radius: 5px;
 		&:hover {
 			background: darken($backgroundColour, 2);
-			border: 1px solid gold;
+			border: 1px solid $brightAccent;
 		}
 	}
 	header {
