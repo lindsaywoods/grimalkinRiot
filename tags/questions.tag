@@ -1,5 +1,6 @@
-<questions>
+<questions id="questions">
   <ask-question-here>
+    <h4 name="yourQuestion" > { yourQuestion } </h4>
     <h3> { questionPageText }</h3>
     <input show={ askHere } type="text" name="questionText" id="textArea" ></input>
   </ask-question-here>
@@ -13,17 +14,11 @@
   <script>
 
     const originalQuestion = `ask your question here`;
-
+    this.yourQuestion = "";
     this.questionPageText = originalQuestion
     this.buttonText = `ask`
     this.askHere = true
     this.answer = ""
-    // this.document.myform.mytextfield.focus();
-    // console.log('this.docutment', this.document);
-      console.log('here', window.document.getElementById('textArea') );
-      
-        // window.document.getElementById('textArea').focus();
-    
 
 
     nextPage() {
@@ -43,13 +38,14 @@
     askQuestion() {
       let question = document.getElementsByName('questionText')[0].value;
       this.questionPageText = question;
-      this.askHere = false
+      this.yourQuestion = "your question:";
+      this.askHere = false;
       this.selectAnswer();
     }
     
-    
     clearText() {
       document.getElementsByName('questionText')[0].value = "";
+      this.yourQuestion = "";
     }
     
     resetPage() {
@@ -110,22 +106,10 @@
       // get prediction style class from array 'predictionStyles'
       const predictionStyle = predictionStyles[randomIndex];
       const predictionText = document.getElementById('predictions');
-
       
       predictionText.classList.add(predictionStyle)
       this.answer = getPrediction;
-    
-    
-    
-    
-    
-    
-    
     }
-
-
-
-
 
   </script>
 </questions>

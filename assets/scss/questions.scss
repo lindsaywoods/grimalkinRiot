@@ -2,8 +2,20 @@ questions {
   display: flex;
   flex-direction: column;
   color: $mainWhite;
-  h3 {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  // border: 3px solid mediumvioletred;
+  // max-width: 100vw;
+  // max-height: 100vh;
+  h3, h4 {
     font-family: $displayFont;
+  }
+  h3 {
+    margin-bottom: 4%;
+  }
+  h4 {
+    margin-bottom: 1%;
   }
   button {
     width: 100px;
@@ -14,7 +26,7 @@ questions {
     border: none;
     border-radius: 5px;
     color: $mainWhite;
-
+    margin-top: 4%;
   }
   input {
     border-radius: 5px;
@@ -30,37 +42,43 @@ questions {
   }
   text-align: center;
 
-  .prediction-1, .prediction-2 {
+  // PREDICTION 1 & PREDICTION 2 - CLEMENTINE
+  .prediction-1, .prediction-2{
     font-family: 'Barrio', cursive;
-    font-size: 30px;    
-      &:before {
-          font-family: $copyFont;
-          content:"soothsayer clementine says : ";
-          font-size: 14px;
-      } 
-      &:after {
-          content: url("../scss/components/kittens/clementine.svg");
-      }
-    }
-    
+    font-size: 30px;
+  }
+  .prediction-1::after, .prediction-2::after {
+    content: url("../scss/components/kittens/hortense.svg");
+  }
+  .prediction-1::before, .prediction-2::before {
+    content: "soothsayer hortense says: ";
+    font-family: $copyFont;    
+    font-size: 24px;
+    display: block;
+    margin-bottom: $answerBeforeElementMarginBottom;
+  }
 
   // PREDICTION 3 & PREDICTION 4 - CLEMENTINE
   .prediction-3, .prediction-4 {
     font-family: 'Chelsea Market', cursive;
-    font-size: 16px;
+    font-size: 21px;
   }
   .prediction-3::after, .prediction-4::after {
     content: url("../scss/components/kittens/clementine2.svg");
   }
   .prediction-3::before, .prediction-4::before {
     content: "soothsayer clementine says: ";
-    font-family: $copyFont;    
+    font-family: $copyFont;
+    font-style: 24px;
+    display: block;
+    margin-bottom: $answerBeforeElementMarginBottom;    
   }
 
   // PREDICTION 5 & PREDICTION 6 - HORTENSE
   .prediction-5, .prediction-6{
     font-family: 'Nanum Brush Script', cursive;
     font-size: 40px;
+    line-height: 48px;
   }
   .prediction-5::after, .prediction-6::after {
     content: url("../scss/components/kittens/hortense.svg");
@@ -68,7 +86,9 @@ questions {
   .prediction-5::before, .prediction-6::before {
     content: "soothsayer hortense says: ";
     font-family: $copyFont;    
-    font-size: 14px;
+    font-size: 24px;
+    display: block;
+    margin-bottom: $answerBeforeElementMarginBottom;
   }
   .prediction-6 {
     font-size: 25px;
@@ -83,7 +103,9 @@ questions {
   .prediction-7::before, .prediction-8::before {
     content: "soothsayer olivia says:";
     font-family: $copyFont;
-    font-size: 16px;
+    font-size: 24px;
+    display: block;
+    margin-bottom: $answerBeforeElementMarginBottom;
   }
   .prediction-7::after, .prediction-8::after {
     content: url("../scss/components/kittens/olivia.svg");
@@ -96,7 +118,9 @@ questions {
     &::before {
       content: "soothsayer hortense says : ";
       font-family: $copyFont;
-      font-size: 14px;
+      font-size: 24px;
+      display: block;
+      margin-bottom: $answerBeforeElementMarginBottom;
     }
     &::after {
       content: url("../scss/components/kittens/hortense2.svg")
@@ -114,7 +138,9 @@ questions {
     &::before {
       font-family: $copyFont;
       content: "soothsayer olivia says : ";
-      font-size: 14px;
+      font-size: 24px;
+      display: block;
+      margin-bottom: $answerBeforeElementMarginBottom;
     }    
     &::after {
       content: url("../scss/components/kittens/olivia2.svg");
@@ -128,7 +154,9 @@ questions {
     &::before{
       content: "soothsayer sophronia says : ";
       font-family: $copyFont;
-      font-size: 14px;
+      font-size: 24px;
+      display: block;
+      margin-bottom: $answerBeforeElementMarginBottom;
     }
     &::after {
       content: url("../scss/components/kittens/sophronia.svg");
@@ -141,8 +169,10 @@ questions {
     font-size: 30px;
     &::before {
       content: "soothsayer mabel says : ";
-      font-size: 14px;
+      font-size: 24px;
       font-family: $copyFont;
+      display: block;
+      margin-bottom: $answerBeforeElementMarginBottom;
     }
     &::after {
       content: url("../scss/components/kittens/mabel.svg");
@@ -156,7 +186,9 @@ questions {
     &::before {
       content: "soothsayer sophronia says : ";
       font-family: $copyFont;
-      font-size: 14px;
+      font-size: 24px;
+      display: block;
+      margin-bottom: $answerBeforeElementMarginBottom;
     }
     &::after {
       content: url("../scss/components/kittens/sophronia2.svg");

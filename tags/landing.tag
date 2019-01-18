@@ -28,8 +28,9 @@
     this.buttonMessage = 'click here to divine your future'
     this.landingPage = true
     switchToQuestionPage() {
-      this.landingPage = false
+      this.landingPage = false;
       riot.mount('questions')
+      document.getElementById("questions").style.border = "2px solid mediumvioletred";
     }
   </script>
 </landing>

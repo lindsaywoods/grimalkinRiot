@@ -7,7 +7,8 @@ landing {
 	text-align: center;
 	button {
 		display: block;
-		margin: 4% auto;
+		margin: 0 auto;
+		margin-top: 50px;
 		padding: 2%;
 		font-family: $displayFont;
 		text-transform: uppercase;
@@ -25,13 +26,12 @@ landing {
 	}
 	header {
 		font-size: xx-large;
-		line-height: 2;
 		font-family: $displayFont;
 		margin-bottom: 3%;
-		line-height: 1;
 	}
 	main-message {
 		font-size: x-large;
+
 	}
 	card-border {
 		// border: 1px solid $mainWhite;
