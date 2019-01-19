@@ -9,17 +9,16 @@
       { answer }
     </p> 
   </answer>
-  <button name="test" onclick={ nextPage } input="submit" type="submit" > { buttonText } </button>
+  <button name="blur" onclick={ nextPage } input="submit" type="submit" > { buttonText } </button>
 
   <script>
 
-    const originalQuestion = `ask your question here`;
+    let originalQuestion = `ask your question here`;
     this.yourQuestion = "";
     this.questionPageText = originalQuestion
     this.buttonText = `ask`
     this.askHere = true;
     this.answer = ""
-
 
     nextPage() {
       const expr = this.buttonText;
@@ -27,7 +26,6 @@
         case 'ask another':
         this.clearText();
         this.resetPage();
-        this.setFocus();
         break;
         
         case 'ask':
@@ -56,18 +54,8 @@
       this.buttonText = `ask`;
       const clear = document.getElementById('predictions');
       clear.className = "";
-    }
-
-    setFocus() {
-      // const test = document.getElementsByName('textArea');
-      // const test = document.getElementById('textArea');
-      // const test = document.getElementsByName('test');
-      // const test = document.getElementsByTagName('ask-question-here');
-      const test2 = document.getElementsByName('questionText')[0];
-      console.log('set focus ran', test2);
-      test2.blur();
-
-              // test2.blur();
+      const blurButton = document.getElementsByName('blur')[0];
+      blurButton.blur();
       
     }
     
