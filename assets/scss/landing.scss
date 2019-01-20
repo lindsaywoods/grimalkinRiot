@@ -28,6 +28,10 @@ landing {
 		font-size: xx-large;
 		font-family: $displayFont;
 		margin-bottom: 3%;
+		p {
+			font-size: 75%;
+			padding-top: 25px;
+		}
 	}
 	main-message {
 		font-size: x-large;
